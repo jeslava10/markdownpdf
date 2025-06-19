@@ -6,7 +6,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [1.1.0] - 2025-06-18
+## [1.1.0] - 2025-06-19
 
 ### ✨ Nuevas funcionalidades
 - Configuración inicial del flujo de trabajo GitFlow:
