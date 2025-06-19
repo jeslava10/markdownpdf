@@ -6,7 +6,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [1.2.0] - 2025-06-xx
+## [1.2.0] - 2025-06-18
 
 ### 🛠 Cambios
 - Unificación del flujo de trabajo de releases: ahora los tags y releases se crean automáticamente al hacer merge de una rama release a main con un mensaje de commit que comience con 'release:'.
