@@ -6,7 +6,14 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [1.1.0] - 2025-06-19
+## [1.2.0] - 2025-06-18
+
+### 🛠 Cambios
+- Unificación del flujo de trabajo de releases: ahora los tags y releases se crean automáticamente al hacer merge de una rama release a main con un mensaje de commit que comience con 'release:'.
+- Eliminado el archivo duplicado de workflow de GitHub Actions para releases.
+- Mejorados los permisos de CI para permitir la creación automática de tags y releases.
+
+## [1.1.0] - 2025-06-18
 
 ### ✨ Nuevas funcionalidades
 - Configuración inicial del flujo de trabajo GitFlow:
@@ -357,4 +364,4 @@ Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más det
 
 **¡Versión 1.0.0 lista para producción!** 🎉
 
-Esta versión representa un conversor Markdown a PDF completo, profesional y listo para uso en producción con todas las funcionalidades principales implementadas y documentadas. 
+Esta versión representa un conversor Markdown a PDF completo, profesional y listo para uso en producción con todas las funcionalidades principales implementadas y documentadas.
