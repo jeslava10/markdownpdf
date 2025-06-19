@@ -5,6 +5,26 @@ Todas las notables mejoras y cambios en el Conversor Markdown a PDF Avanzado.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [1.1.0] - 2025-06-19
+
+### ✨ Nuevas funcionalidades
+- Configuración inicial del flujo de trabajo GitFlow:
+  - `main`: rama principal para producción
+  - `develop`: rama de integración de cambios
+  - `feature/*`: ramas para funcionalidades nuevas (merge squash hacia `develop`)
+  - `release/x.y.z`: ramas para preparar releases desde `develop`, con ajustes de versión y changelog
+  - `hotfix/x.y.z`: correcciones urgentes desde `main` directamente
+- Estructura de release documentada y soportada mediante GitHub Actions.
+- Flujo automático de publicación al hacer `merge` de `release/*` a `main`:
+  - Generación de tag (`vX.Y.Z`)
+  - Publicación de release en GitHub con base en `CHANGELOG.md`
+
+### 🛠 Mejoras técnicas
+- Se agregó workflow `release-on-main.yml` para automatizar la creación de releases.
+- Validación de formato semántico del número de versión desde `CHANGELOG.md`.
+
+
 ## [1.0.0] - 2025-06-18
 
 ### 🎉 Lanzamiento Oficial - Versión Estable
