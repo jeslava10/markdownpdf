@@ -1,0 +1,116 @@
+# Configuración por defecto del conversor Markdown a PDF
+default:
+  input_dir: "./conversion"
+  output_dir: "./output"
+  style_file: "./style/light.css"
+  page_size: "A4"
+  margins: "2cm"
+  font_family: "Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif"
+  language: "es"
+  verbose: false
+  
+  # Configuración de imágenes por defecto
+  max_image_width: 800
+  max_image_height: 600
+  image_quality: 85
+  download_remote_images: false
+  embed_images: false
+  
+  # Configuración de TOC por defecto
+  include_toc: false
+  toc_levels: 3
+  number_headings: false
+
+# Templates predefinidos
+templates:
+  light:
+    style_file: "./style/light.css"
+    page_size: "A4"
+    margins: "2cm"
+    font_family: "Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    language: "es"
+    
+    # Configuración de imágenes
+    max_image_width: 800
+    max_image_height: 600
+    image_quality: 85
+    download_remote_images: false
+    embed_images: false
+    
+    # Configuración de TOC
+    include_toc: false
+    toc_levels: 3
+    number_headings: false
+  
+  dark:
+    style_file: "./style/dark.css"
+    page_size: "A4"
+    margins: "2cm"
+    font_family: "Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    language: "es"
+    
+    # Configuración de imágenes
+    max_image_width: 800
+    max_image_height: 600
+    image_quality: 85
+    download_remote_images: false
+    embed_images: false
+    
+    # Configuración de TOC
+    include_toc: false
+    toc_levels: 3
+    number_headings: false
+
+# Configuración de logging
+logging:
+  level: "INFO"
+  file: "conversion.log"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  
+# Configuración de validación
+validation:
+  check_broken_links: true
+  check_missing_images: true
+  check_empty_files: true
+  max_file_size_mb: 10
+  max_line_length: 100
+  allowed_image_formats: ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp', '.tiff']
+  max_image_size_mb: 10
+  require_https_links: true
+  require_alt_text: true
+  check_duplicate_headings: true
+  check_heading_structure: true
+  check_invalid_characters: true
+  check_yaml_syntax: true
+
+# Configuración de metadatos por defecto
+metadata:
+  default_author: "Usuario"
+  default_title: "Documento Markdown"
+  default_date_format: "%Y-%m-%d"
+  include_creation_date: true
+  include_modification_date: true
+  include_file_size: false
+  include_word_count: false
+
+# Configuración de rendimiento
+performance:
+  max_workers: 4
+  chunk_size: 1024
+  timeout_seconds: 30
+  memory_limit_mb: 512
+
+# Configuración de salida
+output:
+  include_toc: false
+  include_page_numbers: true
+  include_headers: true
+  include_footers: true
+  compress_pdf: false
+  embed_fonts: true
+  optimize_images: true
+  dpi: 300
+  image_quality: 85
+  include_pdf_metadata: true
+  pdf_title: "Documento Generado"
+  pdf_author: "Conversor Markdown" 
