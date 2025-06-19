@@ -5,7 +5,11 @@ Todas las notables mejoras y cambios en el Conversor Markdown a PDF Avanzado.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<<<<<<< HEAD
 ## [1.0.0] - 2025-06-17
+=======
+## [1.0.0] - 2025-06-18
+>>>>>>> origin/main
 
 ### 🎉 Lanzamiento Oficial - Versión Estable
 
