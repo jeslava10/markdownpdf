@@ -1,0 +1,486 @@
+/* ========================================
+   TEMA OSCURO - VARIABLES CSS
+   ======================================== */
+:root {
+  --font-main: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+  --font-code: 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
+  --color-bg: #18181b;
+  --color-bg-alt: #27272a;
+  --color-text: #e5e7eb;
+  --color-heading: #60a5fa;
+  --color-accent: #f59e42;
+  --color-success: #4ade80;
+  --color-error: #f87171;
+  --color-warning: #fbbf24;
+  --color-border: #3f3f46;
+  --color-table-header: #27272a;
+  --color-table-row-alt: #232326;
+  --color-link: #60a5fa;
+  --color-link-hover: #2563eb;
+  --color-alert-info-bg: #0ea5e922;
+  --color-alert-info-border: #38bdf8;
+  --color-alert-warning-bg: #fbbf2422;
+  --color-alert-warning-border: #fde047;
+  --color-alert-error-bg: #f8717122;
+  --color-alert-error-border: #f87171;
+  --color-alert-success-bg: #4ade8022;
+  --color-alert-success-border: #4ade80;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  font-family: var(--font-main);
+}
+
+h1 { border-bottom: 2.5px solid var(--color-heading); }
+h2 { border-bottom: 2px solid var(--color-accent); }
+h3 { color: var(--color-accent); }
+h4, h5, h6 { color: var(--color-text); border-bottom: none; }
+
+code, kbd, samp {
+  font-family: var(--font-code);
+  background: var(--color-bg-alt);
+  color: var(--color-heading);
+}
+
+pre {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+}
+
+table {
+  background: var(--color-bg);
+}
+th {
+  background: var(--color-table-header);
+}
+tr:nth-child(even) {
+  background: var(--color-table-row-alt);
+}
+
+a {
+  color: var(--color-link);
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+.alert-info {
+  background: var(--color-alert-info-bg);
+  border-color: var(--color-alert-info-border);
+}
+.alert-warning {
+  background: var(--color-alert-warning-bg);
+  border-color: var(--color-alert-warning-border);
+}
+.alert-error {
+  background: var(--color-alert-error-bg);
+  border-color: var(--color-alert-error-border);
+}
+.alert-success {
+  background: var(--color-alert-success-bg);
+  border-color: var(--color-alert-success-border);
+}
+
+/* Aplica el resto de reglas usando las variables donde corresponda */
+
+/* ========================================
+   TEMA OSCURO - ESTILOS TÉCNICOS
+   ======================================== */
+
+/* Variables de color para tema oscuro */
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #3a3a3a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-muted: #888888;
+    --accent-primary: #4fc3f7;
+    --accent-secondary: #81c784;
+    --accent-warning: #ffb74d;
+    --accent-error: #f44336;
+    --border-primary: #404040;
+    --border-secondary: #555555;
+    --code-bg: #2b2b2b;
+    --code-border: #404040;
+    --link-color: #64b5f6;
+    --link-hover: #90caf9;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Configuración base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2cm;
+    max-width: 100%;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 2.2em;
+    border-bottom: 3px solid var(--accent-primary);
+    padding-bottom: 0.3em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--accent-secondary);
+    padding-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: var(--accent-primary);
+}
+
+h4 {
+    font-size: 1.2em;
+    color: var(--accent-secondary);
+}
+
+h5, h6 {
+    font-size: 1.1em;
+    color: var(--text-secondary);
+}
+
+/* Párrafos y texto */
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+    color: var(--text-primary);
+}
+
+strong {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+em {
+    color: var(--accent-secondary);
+    font-style: italic;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: var(--link-hover);
+}
+
+/* Listas */
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 2em;
+    color: var(--text-primary);
+}
+
+li {
+    margin-bottom: 0.3em;
+}
+
+ul li::marker {
+    color: var(--accent-primary);
+}
+
+ol li::marker {
+    color: var(--accent-secondary);
+}
+
+/* Código */
+code {
+    background-color: var(--code-bg);
+    color: var(--accent-primary);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    border: 1px solid var(--code-border);
+}
+
+pre {
+    background-color: var(--code-bg);
+    border: 1px solid var(--code-border);
+    border-radius: 6px;
+    padding: 1em;
+    margin: 1.5em 0;
+    overflow-x: auto;
+    page-break-inside: avoid;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--text-primary);
+    font-size: 0.9em;
+}
+
+/* Bloques de código con sintaxis highlighting */
+.highlight {
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    margin: 1.5em 0;
+    page-break-inside: avoid;
+}
+
+.highlight pre {
+    background: none;
+    border: none;
+    margin: 0;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    background-color: var(--bg-secondary);
+    border-radius: 6px;
+    overflow: hidden;
+    page-break-inside: avoid;
+}
+
+th {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 0.8em;
+    text-align: left;
+    border-bottom: 2px solid var(--border-primary);
+}
+
+td {
+    padding: 0.8em;
+    border-bottom: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-tertiary);
+}
+
+tr:hover {
+    background-color: var(--bg-primary);
+}
+
+/* Citas */
+blockquote {
+    background-color: var(--bg-secondary);
+    border-left: 4px solid var(--accent-primary);
+    margin: 1.5em 0;
+    padding: 1em;
+    border-radius: 0 6px 6px 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Alertas y notas */
+.alert {
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    border-left: 4px solid;
+    page-break-inside: avoid;
+}
+
+.alert-info {
+    background-color: rgba(79, 195, 247, 0.1);
+    border-left-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.alert-warning {
+    background-color: rgba(255, 183, 77, 0.1);
+    border-left-color: var(--accent-warning);
+    color: var(--accent-warning);
+}
+
+.alert-error {
+    background-color: rgba(244, 67, 54, 0.1);
+    border-left-color: var(--accent-error);
+    color: var(--accent-error);
+}
+
+.alert-success {
+    background-color: rgba(129, 199, 132, 0.1);
+    border-left-color: var(--accent-secondary);
+    color: var(--accent-secondary);
+}
+
+/* Tabla de contenidos */
+.table-of-contents {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 2em 0;
+    page-break-inside: avoid;
+}
+
+.table-of-contents h2 {
+    margin-top: 0;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent-primary);
+    padding-bottom: 0.5em;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 0.5em;
+}
+
+.table-of-contents a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.table-of-contents a:hover {
+    color: var(--accent-primary);
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-secondary);
+    margin: 1em 0;
+}
+
+/* SVG específico para tema oscuro */
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* Contenedores SVG */
+.svg-container {
+    text-align: center;
+    margin: 1.5em 0;
+    padding: 1em;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border-primary);
+}
+
+.diagram {
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Separadores horizontales */
+hr {
+    border: none;
+    border-top: 2px solid var(--border-primary);
+    margin: 2em 0;
+}
+
+/* Metadatos */
+.metadata {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    padding: 1em;
+    margin-bottom: 2em;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.metadata h3 {
+    margin-top: 0;
+    color: var(--accent-primary);
+}
+
+/* Configuración de página */
+@page {
+    size: A4;
+    margin: 2cm;
+    @top-center {
+        content: "Documento Técnico - Tema Oscuro";
+        color: var(--text-muted);
+        font-size: 0.8em;
+    }
+    @bottom-center {
+        content: counter(page);
+        color: var(--text-muted);
+        font-size: 0.8em;
+    }
+    background: #1a1a1a;
+}
+
+body {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Responsive y print */
+/*
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .table-of-contents {
+        page-break-inside: avoid;
+    }
+    
+    pre, code {
+        page-break-inside: avoid;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+}
+*/
+
+/* Soporte para emojis en tema oscuro */
+.emoji {
+    font-family: 'EmojiFont', sans-serif;
+    font-size: 1.2em;
+    vertical-align: middle;
+    filter: brightness(1.1);
+} 
